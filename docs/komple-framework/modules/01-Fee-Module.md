@@ -1,31 +1,35 @@
 # Fee Module
 
-Fee module is used for the configuration and distribution of fees to be used in by different modules.
+Fee module is used for the configuration and distribution of fees to be used by different modules.
 
 From setting a minting price to setting up marketplace fees, it can be utilized in different contracts for the configuration of revenue and payment streams.
 
 ## Setting a Fee
 
-All of the fees created within Fee Module has 3 properties.
+All of the fees set within Fee Module has four properties.
 
 - Fee Type
 - Module Name
 - Fee Name
+- Payment Info
 
 :::info
 
-**Fee Type** is used as an identifier for fee values.  
-**Module Name** is used as an identifier for matching modules.  
-**Fee Type** is used as an identifier for matching fees within a module.
+**Fee Type** is used as an identifier for the type of fee - Percentage or Fixed.   
+**Module Name** is used as an identifier for matching the correct module.  
+**Fee Type** is used as an identifier for matching the correct fee within a module.  
+**Payment Info** is used as an identifier for payment information.
 
 :::
 
-5 $JUNO minting price on a collection and %5 marketplace owner fee on every purchase can be defined as:
+Simple examples such as 5 $JUNO minting price on a collection or %5 marketplace owner fee on every purchase can be defined as:
 
-|  Fee Type  | Module Name |        Fee Name       |
-|:----------:|:-----------:|:---------------------:|
-|    Fixed   |     Mint    | Price_(Collection_ID) |
-| Percentage | Marketplace |   Marketplace_Owner   |
+|  Fee Type  | Module Name |        Fee Name       | Payment Info             |
+|:----------:|:-----------:|:---------------------:|--------------------------|
+|    Fixed   |     Mint    | Price_(Collection ID) | (Optional Payment Address, 5)    |
+| Percentage | Marketplace |   Marketplace_Owner   | (Optional Payment Address, 0.05) |
+
+Fees can also be easily removed and reset by using the same fee type, module name and fee name.
 
 ## Fee Types
 
@@ -36,40 +40,80 @@ Currently there are two types of fees that can be set within the Fee Module.
 
 ### Percentage Fees
 
-These types of fees are used as decimal values.
+These types of fees are used as decimal values. On distribution method or other calculations, this percentage value will be multiplied with a number to get the final fee amount.
 
 **%2** Community Pool Fee in Marbu is possible with percentage fees.
 
 ### Fixed Fees
 
-These types of fees are used as integer values.
+These types of fees are used as integer values. As these are fixed values, they can be used as is.
 
 **1 $JUNO** marketplace creation fee in Marbu is possible with fixed fees.
 
 ## Distribution
 
-After setting the desired fees in the module, distribution message can be executed to distribute the fees according to the correct configuration.
+After setting the desired fees, distribution message can be executed to distribute the fees according to the configuration.
 
-Some funds must be sent along with the message for the distribution to work.
+Since fees have an optional payment address and amount, distribution only happens if there is a payment address.
 
-Let's take a look at some examples with each type of fees:
+- If the payment address is present on distribution, that address will be used.
+- If the payment address is not present on distribution
+    - If a valid payment address is supplied, that address will be used.
+    - If no valid payment address is supplied, that fee will be skipped.
 
-### Percentage Fees
+## Examples
 
-Image we have 25% for **X** fee, 25% for **Y** fee and 50% for **Z** fee.
+Imagine we have a marketplace that has these fees:
 
-If we send 100 $JUNO for distribution:
+- 10 $JUNO minting price for collection 1
+- %8 royalty fee for each sale
+- %5 Marketplace Owner Fee
+- %3 Community Pool Fee
 
-- 25 $JUNO goes to **X**
-- 25 $JUNO goes to **Y**
-- 50 $JUNO goes to **Z**
+These fees can be represented as:
 
-### Fixed Fees
 
-Image we have 6 for **X** fee, 12 for **Y** fee and 12 for **Z** fee.
-
-If we send 20 $JUNO for distribution:
-
-- 6 $JUNO goes to **X**
-- 12 $JUNO goes to **Y**
-- 12 $JUNO goes to **Z**
+```json
+[
+    {
+        fee_type: "fixed",
+        module_name: "mint",
+        // This is an arbitrary name for the fee
+        // Price_(Collection ID)
+        fee_name: "price_1",
+        value: {
+            payment_address: "juno1...",
+            amount: 10
+        }
+    },
+    {
+        fee_type: "percentage",
+        module_name: "mint",
+        // This is an arbitrary name for the fee
+        // Royalty_(Collection ID)
+        fee_name: "royalty_1",
+        value: {
+            payment_address: "juno1...",
+            amount: "0.08"
+        }
+    },
+    {
+        fee_type: "percentage",
+        module_name: "marketplace",
+        fee_name: "marketplace_owner",
+        value: {
+            payment_address: "juno1...",
+            amount: "0.05"
+        }
+    },
+    {
+        fee_type: "percentage",
+        module_name: "marketplace",
+        fee_name: "community_pool",
+        value: {
+            payment_address: "juno1...",
+            amount: "0.03"
+        }
+    }
+]
+```
