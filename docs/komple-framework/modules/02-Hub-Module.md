@@ -1,25 +1,18 @@
 # Hub Module
 
-Hub Module is the heart of the Komple Framework. It's used for the creation of different modules and used for address resolution.
-
-Several things can be done with Hub Module:
-
-- Module instantiation
-- Module address resolution
+Hub Module is the heart of the Komple Framework. It's main purpose is to act as a registry for different modules and their addresses.
 
 Every projects starts out with a Hub Module and has only one.
 
 ## Module Registry
 
-Module registry is a way of adding modules to be used in the Hub module. 
+Module registry is a way of adding modules to be used by the framework.
 
-After registration, the new module's address is saved to hub storage. This address is later used in internal messages between contracts within the framework.
+After registration, the new module's address is saved to Hub Module's storage. This address is later used in internal messages between contracts within the framework.
 
-All of the Komple Framework modules can be registered through the hub.
+While the framework provides the tools to develop projects, in some cases those modules might not be enough for making applications work the way they are imagined. Sometimes there needs to be some custom logic added to the framework.
 
-While the modules provided by Komple is going to grow in time, in some cases those modules might not be enough for making applications work the way they are imagined. Sometimes there needs to be some custom logic added to the framework.
-
-Just like the official modules, additional modules can be registered too.
+Just like the official modules, additional custom modules can be registered too. See [Custom Modules](/komple-framework/modules/Custom-Modules) to learn more about developing custom modules.
 
 ## Removing Modules
 
