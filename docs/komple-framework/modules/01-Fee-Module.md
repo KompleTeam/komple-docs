@@ -1,6 +1,6 @@
 # Fee Module
 
-Fee module is used for the configuration and distribution of fees to be used by different modules.
+Fee Module is used for the configuration and distribution of fees to be used by different modules.
 
 From setting a minting price to setting up marketplace fees, it can be utilized in different contracts for the configuration of revenue and payment streams.
 
