@@ -18,6 +18,6 @@ These permissions can be used in different modules for different purposes.
 
 Permission registry is a way of adding custom permissions without needing to change the core framework logic.
 
-Just like in the [Hub Module](/komple-framework/modules/Hub-Module), permissions must be registered before usage.
+Just like in the [Hub Module](/docs/komple-framework/modules/02-Hub-Module.md), permissions must be registered before usage.
 
 After successfully registering the new permission, it can be used just like other permissions. Permission module will relay the message to the correct contract based on the message and run permission checks.

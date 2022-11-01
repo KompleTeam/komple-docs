@@ -12,7 +12,7 @@ After registration, the new module's address is saved to Hub Module's storage. T
 
 While the framework provides the tools to develop projects, in some cases those modules might not be enough for making applications work the way they are imagined. Sometimes there needs to be some custom logic added to the framework.
 
-Just like the official modules, additional custom modules can be registered too. See [Custom Modules](/komple-framework/modules/Custom-Modules) to learn more about developing custom modules.
+Just like the official modules, additional custom modules can be registered too. See [Custom Modules](/docs/komple-framework/modules/10-Custom-Modules.md) to learn more about developing custom modules.
 
 ## Removing Modules
 

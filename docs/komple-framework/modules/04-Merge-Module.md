@@ -30,7 +30,7 @@ After all of the prerequisites are met, the tokens can be merged.
 
 ## Permissions
 
-Just like in [Mint Module](/komple-framework/modules/Mint-Module) and [Marketplace Module](/komple-framework/modules/Marketplace-Module#permissions), Merge Module can also access permissioning system.
+Just like in [Mint Module](/docs/komple-framework/modules/06-Mint-Module.md) and [Marketplace Module](/docs/komple-framework/modules/03-Marketplace-Module.md), Merge Module can also access permissioning system.
 
 Normal merge operation can be locked from usage and it can be routed through the permissioned merge endpoint. Permissions must be set in [Permission Module](/komple-framework/modules/Permission-Module) prior to usage for this endpoint to work.
 

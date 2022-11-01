@@ -2,7 +2,7 @@
 
 Marketplace Module is used for selling/buying tokens within a project.
 
-Marketplace Module can access any collection that is created under the [Mint Module](/komple-framework/modules/Mint-Module) as long as the collection is not blacklisted.
+Marketplace Module can access any collection that is created under the [Mint Module](/docs/komple-framework/modules/06-Mint-Module.md) as long as the collection is not blacklisted.
 
 ## Listing Types
 
@@ -60,7 +60,7 @@ There are some checks that are done before buying a token:
 
 1. Buying user cannot be the owner of the token.
 2. Exact amount of funds must be sent.
-3. If there is a [Fee Module](/komple-framework/modules/Fee-Module) present in the project, fees and royalties is calculated and deducted from the funds if available in the module.
+3. If there is a [Fee Module](/docs/komple-framework/modules/01-Fee-Module.md) present in the project, fees and royalties is calculated and deducted from the funds if available in the module.
 
 If all of the checks are passed: 
 
@@ -72,6 +72,6 @@ If all of the checks are passed:
 
 ## Permissions
 
-Just like in [Mint Module](/komple-framework/modules/Mint-Module) and [Merge Module](/komple-framework/modules/Merge-Module), Marketplace Module can also access permissioning system.
+Just like in [Mint Module](/docs/komple-framework/modules/06-Mint-Module.md) and [Merge Module](/docs/komple-framework/modules/04-Merge-Module.md), Marketplace Module can also access permissioning system.
 
-Normal buy operation can be locked from usage and it can be routed through the permissioned buy endpoint. Permissions must be set in [Permission Module](/komple-framework/modules/Permission-Module) prior to usage for this endpoint to work. 
+Normal buy operation can be locked from usage and it can be routed through the permissioned buy endpoint. Permissions must be set in [Permission Module](/docs/komple-framework/modules/07-Permission-Module.md) prior to usage for this endpoint to work. 

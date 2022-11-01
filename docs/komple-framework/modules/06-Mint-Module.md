@@ -50,7 +50,7 @@ This is basically the same as **Mint** method but with permission checks running
 
 Different permissions can be plugged in for the mint module.
 
-More info can be read under [Permission Module](/komple-framework/modules/Permission-Module).
+More info can be read under [Permission Module](/docs/komple-framework/modules/07-Permission-Module.md).
 
 ## Linking Collections
 

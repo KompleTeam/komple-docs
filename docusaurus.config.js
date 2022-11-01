@@ -67,7 +67,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'komplejs/Overview',
+            docId: 'komplejs/overview',
             position: 'left',
             label: 'KompleJS',
           },
@@ -92,15 +92,15 @@ const config = {
             items: [
               {
                 label: 'Komple Framework',
-                to: '/docs/komple-framework/overview',
+                to: '/docs/komple-framework/overview.md',
               },
               {
                 label: 'KompleJS',
-                to: '/docs/komplejs/overview',
+                to: '/docs/komplejs/overview.md',
               },
               {
                 label: 'Marbu',
-                to: '/docs/marbu/overview',
+                to: '/docs/marbu/overview.md',
               },
             ],
           },
