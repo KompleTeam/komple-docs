@@ -5,11 +5,13 @@ title: Concepts
 
 Before we dive into more details about the Komple Framework, let's take a look at some of the concepts that are used throughout the contracts.
 
+Make sure to read [CosmWasm Docs](https://docs.cosmwasm.com) for learning more about how smart contracts work in Cosmos ecosystem.
+
 ## Admins
 
 There are two type of admins: 
 
-- **Contract admin** is the address that can perform migrations. This is on contract level and can be updated or removed by the contract admin. 
+- **Contract admin** is the address that can perform [migrations](https://docs.cosmwasm.com/docs/1.0/smart-contracts/migration). This is on contract level and can be updated or removed by the contract admin. 
 
 - **Framework admin** is the address that can do operations within the framework such as registering modules, creating collections, etc. This is on software level and cannot be updated or removed by the config admin.
 
