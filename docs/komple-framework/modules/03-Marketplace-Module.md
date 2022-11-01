@@ -50,6 +50,7 @@ There are a couple of prerequisites before listing tokens:
 4. The tokens not have transfer, send and burn locked.
 5. Users must own the tokens that they want to list.
 6. The tokens must not be listed already.
+7. Users need to authorize the Marketplace Module to transfer the tokens.
 
 If all of the prerequisites are met, the tokens can be listed and they are locked from transferring, sending or burning.
 
