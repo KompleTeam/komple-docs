@@ -12,9 +12,9 @@ Komple is a team that aims to use the power of CosmWasm to bring off-chain proce
 
 Some of the things we do:
 
-- [Komple Framework](/komple-framework)
-- [KompleJS](/komplejs)
-- [Marbu](/marbu)
+- [Komple Framework](/docs/komple-framework/overview.md)
+- [KompleJS](/docs/komplejs/overview.md)
+- [Marbu](/docs/marbu/overview.md)
 
 Some of the things we plan to do:
 

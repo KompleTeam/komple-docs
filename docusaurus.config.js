@@ -92,15 +92,15 @@ const config = {
             items: [
               {
                 label: 'Komple Framework',
-                to: '/docs/komple-framework/overview.md',
+                to: '/komple-framework/overview',
               },
               {
                 label: 'KompleJS',
-                to: '/docs/komplejs/overview.md',
+                to: '/komplejs/overview',
               },
               {
                 label: 'Marbu',
-                to: '/docs/marbu/overview.md',
+                to: '/marbu/overview',
               },
             ],
           },
