@@ -9,7 +9,7 @@ const config = {
   title: 'Komple Documentation',
   tagline: 'Documentation for Komple',
   url: 'https://docs.komple.io',
-  baseUrl: '/komple-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
