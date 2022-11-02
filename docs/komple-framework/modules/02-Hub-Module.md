@@ -18,7 +18,7 @@ Just like the official modules, additional custom modules can be registered too.
 
 When a module's address is removed, it cannot be added back to the registry without registering it again. Because of this, it's important to make sure that the module is not needed anymore before removing it.
 
-After removing a module, the execute messages on that module will be locked and will not be callable anymore. Also the contract's admin will be set to `None`.
+After removing a module, the execute messages on that module will be locked and will not be callable anymore. Also the contract's admin will be set to `None` to prevent any further changes.
 
 ## Hub Communication Framework
 
