@@ -8,6 +8,12 @@ title: Welcome to Komple
 
 **Komple:** _Complete, Entire | IPA: kɔmp.lɛ_
 
+:::caution
+
+Keep in mind this documentation is still in development and changes with Komple's progress.
+
+:::
+
 Komple is a team that aims to use the power of CosmWasm to bring off-chain processes to on-chain for easy and decentralized management.
 
 Some of the things we do:
@@ -22,9 +28,3 @@ Some of the things we plan to do:
 - KompleCS
 
 We are laying the foundation where our tools and products will work in harmony to bring communities closer, making them stronger. 
-
-:::caution
-
-Keep in mind this documentation could change with Komple's development progress.
-
-:::
