@@ -3,9 +3,15 @@ sidebar_position: 2
 title: Concepts
 ---
 
-Before we dive into more details about the Komple Framework, let's take a look at some of the concepts that are used throughout the contracts.
+Before we dive into more details about the Komple Framework, let's take a look at some of the concepts that are used throughout the contracts and documentation.
 
 Make sure to read [CosmWasm Docs](https://docs.cosmwasm.com) for learning more about how smart contracts work in Cosmos ecosystem.
+
+## Komple Framework Project
+
+As we are going to see in the next chapters, Komple Framework is a set of smart contracts that are used to build projects. 
+
+By saying "project" we mean a set of contracts that are tied to the same Hub Module. Every Hub Module equals to one project.
 
 ## Admins
 
