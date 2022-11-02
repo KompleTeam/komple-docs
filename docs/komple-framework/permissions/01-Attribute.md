@@ -1,6 +1,6 @@
 # Attribute Permission
 
-Attribute permission can be used for making attribute level comparisons and checks.
+Attribute Permission is used for making attribute level comparisons and checks.
 
 There are 8 types of conditions available for attribute comparison:
 
@@ -13,7 +13,7 @@ There are 8 types of conditions available for attribute comparison:
 - Less Than
 - Less Than or Equal
 
-With combination of different conditions, doing operations on metadata attributes are easier than ever.
+With combination of different conditions, complex checks can be made.
 
 Some examples would be:
 
