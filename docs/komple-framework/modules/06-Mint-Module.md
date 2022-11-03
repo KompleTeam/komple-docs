@@ -9,6 +9,13 @@ Mint Module is responsible for managing collections and minting operations.
 - [Fee Module](/docs/komple-framework/modules/01-Fee-Module.md) is utilized on determining the fee for minting.
 - [Whitelist Module](/docs/komple-framework/modules/09-Whitelist-Module.md) is utilized on checking the whitelist information.
 
+## Collections
+
+There are two type of collections in Komple Framework:
+
+- Standard collection
+- Komple collection
+
 ## Collection Creation
 
 All the collections are created within the Mint Module. 
