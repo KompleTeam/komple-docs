@@ -47,20 +47,20 @@ These metadatas come from a single source just like shared metadata but duplicat
 
 Metadata about the tokens must be created before minting. Based on the metadata type, addition is different.
 
-On [Standard](#standard-metadata), metadata is **automatically** added to Metadata Module on minting. It is created from the IPFS url that is configured in the [Token Module](/docs/komple-framework/modules/08-Token-Module.md).
+On **Standard**, metadata is **automatically** added to Metadata Module on minting. It is created from the IPFS url that is configured in the Token Module.
 
-On [Shared](#shared-metadata) and [Dynamic](#dynamic-metadata), metadata **must** be created beforehand for each token.
+On **Shared** and **Dynamic**, metadata **must** be created beforehand for each token.
 
 ## Linking Metadata
 
 Because metadata lives on Metadata Module, it has to be linked to a token. Based on the metadata type, linking is different.
 
-On [Standard](/docs/komple-framework/modules/08-Token-Module.md), metadata is **automatically** linked with the token id.
+On **Standard**, metadata is **automatically** linked with the token id.
 
 - If token ID is 10 on minting, metadata ID will be 10
 - If token ID is 100 on minting, metadata ID will be 100
 
-On [Shared](#shared-metadata) and [Dynamic](#dynamic-metadata), additional metadata ID **must** be provided on minting.
+On **Shared** and **Dynamic**, additional metadata ID **must** be provided on minting.
 
 - If token ID is 10 on minting, metadata ID can be 5
 - If token ID is 100 on minting, metadata ID can be 50
