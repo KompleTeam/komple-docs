@@ -28,6 +28,8 @@ Permission registry is a way of adding custom permissions without needing to cha
 
 After successfully registering the new permission, it can be used just like other permissions. Permission module will relay the message to the correct contract based on the message and run permission checks.
 
+Just like the official permissions, additional custom permissions can be registered too. See [Custom Permissions](/docs/komple-framework/permissions/04-Custom-Permissions.md) to learn more about developing custom permissions.
+
 ## Removing Permissions
 
 When a permission is removed, it cannot be added back to the registry without registering it again. Because of this, it's important to make sure that the permission is not needed anymore before removing it.
