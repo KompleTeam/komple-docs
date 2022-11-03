@@ -95,6 +95,6 @@ Some examples would be:
 
 ## Permissions
 
-Just like in [Merge Module](/docs/komple-framework/modules/04-Merge-Module.md) and [Marketplace Module](/docs/komple-framework/modules/03-Marketplace-Module.md), Mint Module can also access permissioning system.
+Just like in Merge Module and Marketplace Module, Mint Module can also access permissioning system.
 
-Normal mint operation can be locked from usage and it can be routed through the permissioned mint endpoint. Permissions must be set in [Permission Module](/komple-framework/modules/Permission-Module) prior to usage for this endpoint to work.
+Normal mint operation can be locked from usage and it can be routed through the permissioned mint endpoint. Permissions must be set in Permission Module prior to usage for this endpoint to work.
