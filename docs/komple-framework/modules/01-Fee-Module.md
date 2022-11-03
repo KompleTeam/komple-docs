@@ -8,19 +8,10 @@ From setting a minting price to setting up marketplace fees, it can be utilized 
 
 All of the fees set within Fee Module has four properties.
 
-- Fee Type
-- Module Name
-- Fee Name
-- Payment Info
-
-:::info
-
-**Fee Type** is used as an identifier for the type of fee - Percentage or Fixed.   
-**Module Name** is used as an identifier for matching the correct module.  
-**Fee Type** is used as an identifier for matching the correct fee within a module.  
-**Payment Info** is used as an identifier for payment information.
-
-:::
+- **Fee Type** - used as an identifier for the type of fee - Percentage or Fixed
+- **Module Name** - used as an identifier for matching the correct module
+- **Fee Name** - used as an identifier for matching the correct fee within a module
+- **Payment Info** - used as an identifier for payment information
 
 Simple examples such as 5 $JUNO minting price on a collection or %5 marketplace owner fee on every purchase can be defined as:
 
@@ -28,6 +19,14 @@ Simple examples such as 5 $JUNO minting price on a collection or %5 marketplace 
 |:----------:|:-----------:|:---------------------:|--------------------------|
 |    Fixed   |     Mint    | Price_(Collection ID) | (Optional Payment Address, 5)    |
 | Percentage | Marketplace |   Marketplace_Owner   | (Optional Payment Address, 0.05) |
+
+:::caution
+
+The total amount of fees under a module must be under 100%. If the fees are over 100% upon setting, operation will fail.
+
+:::
+
+## Removing a Fee
 
 Fees can also be easily removed and reset by using the same fee type, module name and fee name.
 
@@ -42,13 +41,13 @@ Currently there are two types of fees that can be set within the Fee Module.
 
 These types of fees are used as decimal values. On distribution method or other calculations, this percentage value will be multiplied with a number to get the final fee amount.
 
-**%2** Community Pool Fee in Marbu is possible with percentage fees.
+- X% fee on marketplace sales that goes to the marketplace owner. If the price is 100 $JUNO, the fee will be X $JUNO
 
 ### Fixed Fees
 
 These types of fees are used as integer values. As these are fixed values, they can be used as is.
 
-**1 $JUNO** marketplace creation fee in Marbu is possible with fixed fees.
+- X $JUNO minting price on a collection
 
 ## Distribution
 

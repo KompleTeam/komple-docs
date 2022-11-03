@@ -114,7 +114,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/home',
+                href: 'https://twitter.com/KompleSocial',
               },
             ],
           },
