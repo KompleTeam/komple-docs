@@ -2,7 +2,13 @@
 
 Marketplace Module is used for selling/buying tokens within a project.
 
-Marketplace Module can access any collection that is created under the [Mint Module](/docs/komple-framework/modules/06-Mint-Module.md) as long as the collection is not blacklisted.
+Marketplace Module can access any collection that is created under the same project as long as the collection is not blacklisted.
+
+#### Related Modules
+
+- [Fee Module](/docs/komple-framework/modules/01-Fee-Module.md) is utilized for determining the fee for selling/buying tokens.
+- [Token Module](/docs/komple-framework/modules/08-Token-Module.md) is utilized for the royalty address resolution.
+- [Permission Module](/docs/komple-framework/modules/07-Permission-Module.md) is utilized for buying with permissions.
 
 ## Listing Types
 
@@ -29,38 +35,44 @@ Auction listings are listings that are sold for a price that is determined by th
 
 ## Listing and Buying Tokens
 
-This part will cover fixed listing only. Fixed listing can be defined as:
+This part will cover fixed listing only. Auction listing will be covered in the future.
 
-```json
-{
-    collection_id: 1,
-    token_id: 1,
-    price: 10,
-    owner: "juno1..."
-}
-```
-
-### Listing
+### Listing Tokens
 
 There are a couple of prerequisites before listing tokens:
 
-1. The collection must be created within the same project. Cross-project listings are not supported yet.
-2. The collection must not be blacklisted.
-3. The collection must not have transfer, send and burn locked.
-4. The tokens not have transfer, send and burn locked.
-5. Users must own the tokens that they want to list.
-6. The tokens must not be listed already.
-7. Users need to authorize the Marketplace Module to transfer the tokens.
+#### Collections
 
-If all of the prerequisites are met, the tokens can be listed and they are locked from transferring, sending or burning.
+- Collections must be in the same project as the Marketplace Module
+- Collections must not be blacklisted
+- Collections must not have transfer, send and burn locked
 
-### Buying
+#### Tokens
+
+- Tokens not have transfer, send and burn locked
+- Users must own the tokens they want to list
+- Tokens must not be listed already
+
+#### Authorization
+
+- Users need to authorize the Marketplace Module to transfer the tokens
+
+If all of the prerequisites are met, tokens can be listed and they are locked from transferring, sending or burning.
+
+### Buying Tokens
 
 There are some checks that are done before buying a token:
 
-1. Buying user cannot be the owner of the token.
-2. Exact amount of funds must be sent.
-3. If there is a [Fee Module](/docs/komple-framework/modules/01-Fee-Module.md) present in the project, fees and royalties is calculated and deducted from the funds if available in the module.
+#### Funds
+
+- Exact amount of funds must be sent
+- If there is a Fee Module present in the project
+    - If fees are enabled, fee amount is calculated and deducted from the funds
+    - If royalties are enabled, royalty amount is calculated and deducted from the funds
+
+#### Ownership
+
+- Buying user cannot be the owner of the token.
 
 If all of the checks are passed: 
 
@@ -72,6 +84,6 @@ If all of the checks are passed:
 
 ## Permissions
 
-Just like in [Mint Module](/docs/komple-framework/modules/06-Mint-Module.md) and [Merge Module](/docs/komple-framework/modules/04-Merge-Module.md), Marketplace Module can also access permissioning system.
+Just like in Mint Module and Merge Module, Marketplace Module can also access permissioning system.
 
-Normal buy operation can be locked from usage and it can be routed through the permissioned buy endpoint. Permissions must be set in [Permission Module](/docs/komple-framework/modules/07-Permission-Module.md) prior to usage for this endpoint to work. 
+Normal buy operation can be locked from usage and it can be routed through the permissioned buy endpoint. Permissions must be set in Permission Module prior to usage for this endpoint to work. 

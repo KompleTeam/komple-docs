@@ -4,7 +4,9 @@ Metadata Module is used to store NFT metadata on-chain.
 
 Main use case of an on-chain metadata that it allows you to store metadata in a decentralized way and it can be updated to work with custom logic that needs mutable information.
 
-Metadata Module a sub module that is used by [Token Module](/docs/komple-framework/modules/08-Token-Module.md). When a new collection is created and Token Module is instantiated, Metadata Module is also instantiated and saved as a sub module.
+#### Related Modules
+
+- [Token Module](/docs/komple-framework/modules/08-Token-Module.md) is the parent module of Metadata Module. 
 
 ## Metadata Types
 

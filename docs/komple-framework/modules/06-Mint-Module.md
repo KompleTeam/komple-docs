@@ -4,10 +4,10 @@ Mint Module is responsible for managing collections and minting operations.
 
 #### Related Modules
 
-- [Token Module](/docs/komple-framework/modules/08-Token-Module.md) is utilized on creating a new collection.
-- [Permission Module](/docs/komple-framework/modules/07-Permission-Module.md) is utilized on minting with permissions.
-- [Fee Module](/docs/komple-framework/modules/01-Fee-Module.md) is utilized on determining the fee for minting.
-- [Whitelist Module](/docs/komple-framework/modules/09-Whitelist-Module.md) is utilized on checking the whitelist information.
+- [Token Module](/docs/komple-framework/modules/08-Token-Module.md) is utilized for creating a new collection.
+- [Permission Module](/docs/komple-framework/modules/07-Permission-Module.md) is utilized for minting with permissions.
+- [Fee Module](/docs/komple-framework/modules/01-Fee-Module.md) is utilized for determining the fee for minting.
+- [Whitelist Module](/docs/komple-framework/modules/09-Whitelist-Module.md) is utilized for checking the whitelist information.
 
 ## Collections
 

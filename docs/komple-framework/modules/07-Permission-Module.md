@@ -6,9 +6,9 @@ Instead of hard coding commonly used pieces of logic into every module that it w
 
 #### Related Permissions
 
-- [Attribute Permission](/docs/komple-framework/permissions/01-Attribute.md) is utilized on comparing attributes of NFTs.
-- [Link Permission](/docs/komple-framework/permissions/02-Link.md) is utilized on checking the link status of collections.
-- [Ownership Permission](/docs/komple-framework/permissions/03-Ownership.md) is utilized on checking the ownership of a user for a NFT.
+- [Attribute Permission](/docs/komple-framework/permissions/01-Attribute.md) is utilized for comparing attributes of NFTs.
+- [Link Permission](/docs/komple-framework/permissions/02-Link.md) is utilized for checking the link status of collections.
+- [Ownership Permission](/docs/komple-framework/permissions/03-Ownership.md) is utilized for checking the ownership of a user for a NFT.
 
 ## Permission Types
 

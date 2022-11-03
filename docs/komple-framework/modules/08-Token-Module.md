@@ -14,7 +14,7 @@ All the existing cw721-base functionality is available as it is in the Token Mod
 #### Related Modules
 
 - [Mint Module](/docs/komple-framework/modules/06-Mint-Module.md) is used as the parent module of Token Module.
-- [Whitelist Module](/docs/komple-framework/modules/09-Whitelist-Module.md) is utilized on checking the whitelist information. It is used as a sub module of Token Module.
+- [Whitelist Module](/docs/komple-framework/modules/09-Whitelist-Module.md) is utilized for checking the whitelist information. It is used as a sub module of Token Module.
 - [Metadata Module](/docs/komple-framework/modules/05-Metadata-Module.md) is created on instantiation. It is used as a sub module of Token Module.
 
 ## Collections
