@@ -7,8 +7,6 @@ title: Overview
 
 KompleJS is a Typescript client library for Komple Framework. It is used for developing server and browser applications built with Komple Framework.
 
-:::info
+Instead of having to write a lot of boilerplate code, you can use KompleJS to quickly build your application. It includes every official module and permission from Komple Framework.
 
-KompleJS is not a live npm package at the moment. It is still in development and will be published to npm once it is ready.
-
-:::
+In the coming pages, we will explain how to use KompleJS to build your application.
