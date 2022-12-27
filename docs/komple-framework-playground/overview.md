@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 # Overview
@@ -16,5 +16,12 @@ It has all the features of Komple Framework, such as:
 You can also upload your custom contracts to use it as modules or permissions in your projects.
 
 In the following pages, we will go through some of the things you can do in Komple Framework Playground. Use this as a reference to learn more about Komple Framework.
+
+There are 4 main sections in this guide:
+
+- Projects
+- Collections
+- Marketplace
+- Permissions
 
 Happy building!
