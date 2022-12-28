@@ -21,7 +21,7 @@ There are 4 main sections in this guide:
 
 - Projects
 - Collections
-- Marketplace
+- Marketplaces
 - Permissions
 
 Happy building!
