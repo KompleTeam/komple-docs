@@ -34,4 +34,6 @@ Your custom module may or may not need to have a register message. If it does, y
 
 After you have filled in the information, click on the **Execute Hub Module** button to register your module.
 
+![Custom Module Response](/playground-guides/projects/register-modules/response.png)
+
 Now you have your module registered in the project! Let's move on to the next step to search for a module's address.

@@ -35,6 +35,8 @@ External link to your project. This can be a link to your project's website or a
 
 After you have filled in the information, click on the **Create Hub Module** button.
 
+![Create a Project Response](/playground-guides/projects/create-project-response.png)
+
 You have successfully created a project! Take a note of the Hub Module address. If you lose it, you need to go through your transaction history to find it.
 
 Let's move on to the next step to register new modules.

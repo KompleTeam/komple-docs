@@ -20,4 +20,6 @@ This is the name you gave to your module when you registered it.
 
 After you have filled in the information, click on the **Query Hub Module** button to search for the module's address.
 
+![Search Module Address Response](/playground-guides/projects/search-module-response.png)
+
 Now you have the address of the module you want! You can use this address in each module's own UI to interact with the module.
