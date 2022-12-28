@@ -14,7 +14,7 @@ Keep in mind this documentation is still in development and changes with Komple'
 
 :::
 
-Komple is a team that aims to use the power of CosmWasm to bring off-chain processes to on-chain for easy and decentralized management.
+Komple aims to use the power of CosmWasm to bring off-chain processes to on-chain for easy and decentralized management.
 
 Some of the things we do:
 
