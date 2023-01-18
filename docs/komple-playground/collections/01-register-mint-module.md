@@ -4,7 +4,7 @@
 This section is under https://playground.komple.io/modules/hub/execute
 :::
 
-After you create your project in [Create a Project](/docs/komple-framework-playground/projects/01-create-project.md) section, you can start creating collections in your project.
+After you create your project in [Create a Project](/docs/komple-playground/projects/01-create-project.md) section, you can start creating collections in your project.
 
 In order to create collections, first you need to create a [Mint Module](/docs/komple-framework/modules/06-Mint-Module.md) that will be used to manage collections in your project.
 

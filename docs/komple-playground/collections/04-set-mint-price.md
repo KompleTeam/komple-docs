@@ -4,7 +4,7 @@
 This section is under https://playground.komple.io/modules/fee/execute
 :::
 
-In order to set minting price for a collection, first you need to register the [Fee Module](/docs/komple-framework/modules/01-Fee-Module.md). Check out [Registering a Module](/docs/komple-framework-playground/projects/02-register-module.md) section to learn how to register a module.
+In order to set minting price for a collection, first you need to register the [Fee Module](/docs/komple-framework/modules/01-Fee-Module.md). Check out [Registering a Module](/docs/komple-playground/projects/02-register-module.md) section to learn how to register a module.
 
 After registering and taking note of the Fee Module address you can set the minting price for your collection.
 

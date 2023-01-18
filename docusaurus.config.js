@@ -96,6 +96,10 @@ const config = {
                 to: '/komple-framework/overview',
               },
               {
+                label: 'Komple Playground',
+                to: '/komple-playground/overview',
+              },
+              {
                 label: 'KompleJS',
                 to: '/komplejs/overview',
               },
