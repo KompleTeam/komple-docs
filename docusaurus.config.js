@@ -60,24 +60,24 @@ const config = {
           style: { borderRadius: '4px' }
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'komple-framework/overview',
-            position: 'left',
-            label: 'Komple Framework',
-          },
-          {
-            type: 'doc',
-            docId: 'komplejs/overview',
-            position: 'left',
-            label: 'KompleJS',
-          },
-          {
-            type: 'doc',
-            docId: 'marbu/overview',
-            position: 'left',
-            label: 'Marbu',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'komple-framework/overview',
+          //   position: 'left',
+          //   label: 'Komple Framework',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'komplejs/overview',
+          //   position: 'left',
+          //   label: 'KompleJS',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'marbu/overview',
+          //   position: 'left',
+          //   label: 'Marbu',
+          // },
           {
             href: 'https://github.com/KompleTeam',
             label: 'GitHub',
@@ -94,6 +94,10 @@ const config = {
               {
                 label: 'Komple Framework',
                 to: '/komple-framework/overview',
+              },
+              {
+                label: 'Komple Playground',
+                to: '/komple-playground/overview',
               },
               {
                 label: 'KompleJS',
