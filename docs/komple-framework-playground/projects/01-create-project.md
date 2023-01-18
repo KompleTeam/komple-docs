@@ -40,3 +40,5 @@ After you have filled in the information, click on the **Create Hub Module** but
 You have successfully created a project! Take a note of the Hub Module address. If you lose it, you need to go through your transaction history to find it.
 
 Let's move on to the next step to register new modules.
+
+<!-- TEST HUB MODULE ADDRESS: juno1s54g6t5t0gkhm3xjwuav75zks59gjcysmv029unqwrtz3jv2n5zs7vt6q8 -->
