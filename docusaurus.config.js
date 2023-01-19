@@ -79,6 +79,11 @@ const config = {
           //   label: 'Marbu',
           // },
           {
+            href: 'https://playground.komple.io',
+            label: 'Komple Playground',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/KompleTeam',
             label: 'GitHub',
             position: 'right',
