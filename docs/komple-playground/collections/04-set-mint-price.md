@@ -29,4 +29,6 @@ Observe that the `fee_name` is **"price:<collection_id>"** and `module_name` is 
 
 ![Set Minting Price Keplr](/playground-guides/collections/set-minting-price-keplr.png)
 
-Click on the Execute Fee Module button to set your minting fee.
+Click on the **Execute Fee Module** button to set your minting fee. Now you have a minting fee set for your collection!
+
+This step can be executed multiple times to update the minting fee for your collection.

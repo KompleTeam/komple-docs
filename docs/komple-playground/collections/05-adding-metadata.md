@@ -27,7 +27,7 @@ To change the IFPS link for a collection, select `Update Collection Config` from
 
 ![Update IPFS Link](/playground-guides/collections/update-ipfs-link.png)
 
-Click on Execute Token Module button to update the IPFS link for your collection.
+Click on the **Execute Token Module** button to update the IPFS link for your collection.
 
 ## Metadata Module
 
@@ -74,6 +74,6 @@ To add an attribute, click on `Add` button after filling both the `Attribute Nam
 
 ![Add Attributes](/playground-guides/collections/add-attributes.png)
 
-Click on Execute Metadata Module button to add metadata to your collection.
+Click on the **Execute Metadata Module** button to add metadata to your collection.
 
 For each NFT in your collection, you need to add metadata using this method. Additionally, we are going to implement batch addition in the upcoming releases.

@@ -138,7 +138,7 @@ If CW20 token type is selected, you need to enter both the denom and the cw20 to
 
 ---
 
-After filling all the required fields, click on the **Execute Hub Module** button to create your first collection.
+After filling all the required fields, click on the **Execute Mint Module** button to create your first collection.
 
 ![Create Collection Response](/playground-guides/collections/create/response.png)
 
