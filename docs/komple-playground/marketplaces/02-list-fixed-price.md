@@ -60,4 +60,4 @@ This is the price that you want to list the token for.
 
 ![List Fixed Price NFT](/playground-guides/marketplaces/list-fixed-price.png)
 
-Click on Execute Marketplace Module button to create a fixed price listing. Now you have your token listed on the marketplace!
+Click on the **Execute Marketplace Module** button to create a fixed price listing. Now you have your token listed on the marketplace!
